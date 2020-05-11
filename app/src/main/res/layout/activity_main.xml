@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_main"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/dashboard"
+            android:weightSum="3"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Welcome To HeyBengkel !"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/dashboard">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:columnCount="2"
+                    app:rowCount="3"
+                    app:alignmentMode="alignMargins"
+                    app:columnOrderPreserved="false"
+                    android:layout_margin="20dp"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:id="@+id/btn_pencarian"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="0dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:paddingTop="10dp"
+                                android:src="@drawable/passenger" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="10dp"
+                                android:text="Cari Bengkel" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="6dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="20dp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/btn_tips"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="0dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:paddingTop="10dp"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/motorcycle"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tips Trik"
+                                android:paddingBottom="10dp"
+                                />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="6dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="20dp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/btn_keluar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="0dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:paddingTop="10dp"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/logout"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Keluar"
+                                android:paddingBottom="10dp"
+                                />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.gridlayout.widget.GridLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
