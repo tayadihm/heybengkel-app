@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">HeyBengkel</string>
+
+    <string-array name="spinner_jbengkel">
+        <item>Bengkel Motor</item>
+        <item>Bengkel Umum</item>
+    </string-array>
+
 </resources>

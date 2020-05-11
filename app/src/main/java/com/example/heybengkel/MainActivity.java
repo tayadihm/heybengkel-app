@@ -2,6 +2,7 @@ package com.example.heybengkel;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -20,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         btn_pencarian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,"Dalam masa pengembangan",Toast.LENGTH_LONG).show();
+                Intent i = new Intent(MainActivity.this, FormActivity.class);
+                startActivity(i);
             }
         });
 
