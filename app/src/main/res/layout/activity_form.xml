@@ -5,8 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_main"
-    android:layout_marginLeft="0dp"
     tools:context=".FormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo1"/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -94,7 +105,7 @@
             android:layout_marginTop="30dp"
             android:text="CARI SEKARANG"
             android:textSize="18dp"
-            android:background="@color/colorPrimaryDark"
+            android:background="@color/colorPrimary"
             android:textColor="@color/colorWhite"
             />
 

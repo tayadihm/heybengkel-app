@@ -37,29 +37,9 @@ public class FormActivity extends AppCompatActivity {
         cari_Btnbengkel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(FormActivity.this, "Dalam masa pengembangan", Toast.LENGTH_LONG).show();
+                Intent i = new Intent(FormActivity.this, BengkelActivity.class);
+                startActivity(i);
             }
-
-//                final Dialog mBuilder = new Dialog(FormActivity.this);
-//                final View mView = (View) getLayoutInflater().inflate(R.layout.activity_bengkel, null);
-//                mBuilder.setContentView(mView);
-//                mBuilder.show();
-//                Thread thread = new Thread(){
-//                    @Override
-//                    public void run() {
-//                        try{
-//                            sleep(5000);
-//                        }catch (InterruptedException e){
-//                            e.printStackTrace();
-//                        }finally {
-//                            startActivity(new Intent(FormActivity.this, BengkelActivity.class));
-//                            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-//                            finish();
-//                        }
-//                    }
-//                };
-//                thread.start();
-//            }
         });
 
     }

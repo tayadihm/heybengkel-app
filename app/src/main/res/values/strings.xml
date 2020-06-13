@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">HeyBengkel</string>
+    <string name="bengkel">Bengkel</string>
+    <string name="alamat_bengkel">Alamat Bengkel</string>
+    <string name="kontak_bengkel">089889898</string>
 
     <string-array name="spinner_jbengkel">
         <item>Bengkel Motor</item>
