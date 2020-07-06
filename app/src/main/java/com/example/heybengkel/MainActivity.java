@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         btn_tips.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,"Dalam masa pengembangan",Toast.LENGTH_LONG).show();
+                Intent i = new Intent(MainActivity.this, TipsActivity.class);
+                startActivity(i);
             }
         });
 

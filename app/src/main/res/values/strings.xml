@@ -3,10 +3,32 @@
     <string name="bengkel">Bengkel</string>
     <string name="alamat_bengkel">Alamat Bengkel</string>
     <string name="kontak_bengkel">089889898</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="rating">Rating</string>
 
     <string-array name="spinner_jbengkel">
         <item>Bengkel Motor</item>
         <item>Bengkel Umum</item>
     </string-array>
+
+    <string name="Heading">Jangan Panik! Gunakan Trik saat Mengatasi Ban Bocor</string>
+    <string name="SubHeading">Tips dan Triknya</string>
+    <string name="article">
+
+<b>Berikut Penjelasannya :</b>
+
+1. Memeriksa ban kendaraan
+    Bila kendaraan yang Anda kendarai tiba-tiba mengalami ban bocor, hal pertama yang harus segera Anda lakukan ialah memeriksa dan memastikan penyebab bocornya kendaraan tersebut. Periksa apakah penyebab utama ban bocor ialah karena paku atau benda tajam lainnya.
+Apabila kebocoran ban dikarenakan terkena paku atau benda tajam, trik mengatasi ban bocor yang paling tepat ialah segera mencabut paku terlebih dahulu. Bila tidak ban kemungkinan tidak bisa digunakan lagi.
+“Bila pengendara tidak segera mencabutnya, paku atau benda tajam yang masih menancap di ban bisa mengakibatkan kerusakan di bagian lain”
+Berbeda dengan pengendara yang menggunakan ban tubeless, bila kebocoran diakibatkan oleh paku sebaiknya trik yang dipilih oleh pengendara ialah membiarkan paku tersebut. Jangan mencabut paku yang menancap di ban sebelum Anda sampai di bengkel terdekat.
+
+    2. Membuka baut penahan pentil ban
+    Kedua, apabila kendaraan Anda menggunakan ban dalam, trik untuk mengatasi ban bocor yang harus Anda ambil ialah membuka terlebih dahulu baut penahan pentil ban sebelum membawa motor ke bengkel terdekat. Masukkan pentil ke dalam pelek. Tujuannya ialah agar tidak terjadi kerusakan pada bagian pentil misalnya jebol.
+    Jika kendaraan tersebut dijalankan dengan baut penahan pentil tetap tidak dibuka, maka ban luar akan berputar bersamaan dengan tarikan pada ban dalam. Hal ini mengakibatkan pentil menjadi jebol.
+    3. Tuntun kendaraan dengan pelan-pelan
+    Hal yang sering dilakukan oleh kebanyakan pengendara ialah menaiki kendaraan yang bocor menuju bengkel. Padahal ini tidak seharusnya dilakukan. Saat hendak membawa motor ke tempat tambal ban atau bengkel, sebaiknya motor jangan dinaiki. Sebaliknya tuntun perlahan-lahan kendaraan Anda.
+    Sebab, apabila motor dalam keadaan bocor tetap dinaiki akan mengakibatkan kerusakan yang lebih parah pada bagian lain ban. Bahkan, hal tersebut juga dapat mengakibatkan kerusakan fatal di bagian pelek sepeda motor. Untuk itu, perhatikan trik mengatasi ban bocor dengan bijaksana agar motor tetap dalam kondisi yang prima setelah ban bocor ditembel.
+    https://www.autos.id/tips/jangan-panik-gunakan-trik-saat-mengatasi-ban-bocor</string>
 
 </resources>

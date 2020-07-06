@@ -1,10 +1,14 @@
 package com.example.heybengkel;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,17 +26,21 @@ public class BengkelActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     ArrayList<Bengkel> list;
     AdapterBengkel adapter;
+    ImageView icon_list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bengkel);
 
+        reference = FirebaseDatabase.getInstance().getReference().child("bengkel");
+        reference.keepSynced(true);
+
         recyclerView = findViewById(R.id.list_bengkel);
         recyclerView.setLayoutManager( new LinearLayoutManager(this));
         list = new ArrayList<Bengkel>();
+        setupToolbar();
 
-        reference = FirebaseDatabase.getInstance().getReference().child("bengkel");
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -49,6 +57,13 @@ public class BengkelActivity extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 Toast.makeText(BengkelActivity.this, "Oops Something went Wrong", Toast.LENGTH_SHORT).show();
             }
+
         });
     }
+
+    private void setupToolbar() {
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+    }
+
 }

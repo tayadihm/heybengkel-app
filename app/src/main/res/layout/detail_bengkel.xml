@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".BengkelActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:background="@color/colorWhite">
+
+            <ImageView
+                android:id="@+id/imgResidencel"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/logo1" />
+
+            <LinearLayout
+                android:id="@+id/line_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgResidencel">
+
+                <TextView
+                    android:id="@+id/vnama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:text="@string/bengkel"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/vrating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:text="Rating 5.0"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_orange_light"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/valamat"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text="@string/alamat_bengkel"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/vkontak"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:text="@string/kontak_bengkel"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_3"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Layanan"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/arah_bengkel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/layanan"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:background="@color/colorPrimary"
+                android:text="Arahkan"
+                android:textColor="@color/colorWhite" />
+
+        </RelativeLayout>
+
+</LinearLayout>

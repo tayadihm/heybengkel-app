@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "402729489944",
+    "firebase_url": "https://heybengkel-lwh.firebaseio.com",
+    "project_id": "heybengkel-lwh",
+    "storage_bucket": "heybengkel-lwh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402729489944:android:8b76740855066675ba156d",
+        "android_client_info": {
+          "package_name": "com.example.heybengkel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402729489944-tdkgv238q9joia9asghiqo8oj22menua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6hc4AzqMyGQAollP6zA1SwqEIptig-BU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402729489944-tdkgv238q9joia9asghiqo8oj22menua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
